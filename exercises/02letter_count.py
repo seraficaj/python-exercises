@@ -35,5 +35,6 @@ def letter_count(word):
             dd[letter] += 1
         else:
             dd[letter] = 1
+    return dd
 
-    print(dd)
+print(letter_count('hooray'))

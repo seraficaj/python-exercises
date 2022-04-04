@@ -13,8 +13,9 @@
 
 
 def multiply_by(arr, num):
-    new_arr = map(lambda x: num * x, arr)
-    print(list(new_arr))
+    for i in range(len(arr)):
+        arr[i] *= num
+    return arr
 
 
 print(multiply_by([1, 2, 3], 5))
